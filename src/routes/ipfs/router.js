@@ -1,5 +1,5 @@
 import express from 'express';
-import { ipfsService } from '../../services/ipfs/route-service';
+import ipfsService from '../../services/ipfs/route-service';
 import logger from '../../config/winston';
 
 const router = express.Router();
