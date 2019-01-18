@@ -10,6 +10,6 @@ describe('Services: ipfs', () => {
     it('should return a valid hash', async () => {
       const fileHash = await ipfsService.upload();
       isIPFS.multihash(fileHash).should.equal(true);
-    }).timeout(10000);
+    }).timeout(25000);
   });
 });
