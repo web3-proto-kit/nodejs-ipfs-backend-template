@@ -29,5 +29,5 @@ const download = () => {
 
 export default {
   upload,
-  download
+  download,
 };
