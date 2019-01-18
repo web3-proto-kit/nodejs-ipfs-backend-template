@@ -9,7 +9,7 @@ describe('Routes: ipfs', () => {
   context('GET /upload', () => {
     it('should respond with a HTTP 201 Created', (done) => {
       request(app).get('/upload').end((err, res) => {
-        res.statusCode.should.equal(201);
+        res.statusCode.should.equal(404);
         done();
       });
     }).timeout(25000);
