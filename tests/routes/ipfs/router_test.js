@@ -12,7 +12,7 @@ describe('Routes: ipfs', () => {
         res.statusCode.should.equal(201);
         done();
       });
-    }).timeout(10);
+    }).timeout(25000);
   });
 
   context('GET /download', () => {
