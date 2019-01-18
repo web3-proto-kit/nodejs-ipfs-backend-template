@@ -14,7 +14,7 @@ const largeFile = 'large.pdf';
 
 const getFileChecksum = file => new Promise((resolve, reject) => {
   const hmac = crypto.createHmac('md5', file);
-  const readStream = fs.createReadStream(`${appRoot}/tests/files/${file}`);
+  const readStream = fs.createReadStream(`${appRoot}/test/files/${file}`);
   readStream.on('error', (error) => {
     throw Error(error);
   });
@@ -34,7 +34,7 @@ describe('Routes: hash-validator', () => {
       let returnedChecksum;
       try {
         localChecksum = await getFileChecksum(smallFile);
-        const readStream = fs.createReadStream(`${appRoot}/tests/files/${smallFile}`);
+        const readStream = fs.createReadStream(`${appRoot}/test/files/${smallFile}`);
         await request(app).post(`/hash-validator/checksum/${smallFile}`, readStream).then(
           (res) => {
             returnedChecksum = res.data;
@@ -55,7 +55,7 @@ describe('Routes: hash-validator', () => {
       let returnedChecksum;
       try {
         localChecksum = await getFileChecksum(largeFile);
-        const readStream = fs.createReadStream(`${appRoot}/tests/files/${largeFile}`);
+        const readStream = fs.createReadStream(`${appRoot}/test/files/${largeFile}`);
         await request(app).post(`/hash-validator/checksum/${largeFile}`, readStream).then(
           (res) => {
             returnedChecksum = res.data;
