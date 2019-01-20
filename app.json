@@ -1,0 +1,10 @@
+{
+  "name": "nodejs-ipfs-backend-template",
+  "description": "This is a template express backend.",
+  "keywords": [
+    "nodejs",
+    "expess",
+    "ipfs"
+  ],
+  "repository": "https://github.com/web3-proto-kit/nodejs-ipfs-backend-template"
+}
