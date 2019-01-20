@@ -45,7 +45,7 @@ jobs:
 
       - run:
           name: Deploy to Heroku
-          command: heroku container:release web
+          command: heroku container:release web -a $HEROKU_APP_NAME
 
 # version: 2
 
