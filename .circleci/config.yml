@@ -39,9 +39,9 @@ jobs:
           name: Deploy to Heroku
           command: sudo curl https://cli-assets.heroku.com/install.sh | sh
 
-      - run:
-          name: Deploy to Heroku
-          command: (echo "$HEROKU_CREDENTIALS_EMAIL" echo "$HEROKU_CREDENTIALS_PASSWORD") | heroku login --interactive
+      # - run:
+      #     name: Deploy to Heroku
+      #     command: (echo "$HEROKU_CREDENTIALS_EMAIL" echo "$HEROKU_CREDENTIALS_PASSWORD") | heroku login --interactive
 
       - run:
           name: Deploy to Heroku
