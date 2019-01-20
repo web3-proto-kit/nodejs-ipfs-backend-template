@@ -10,7 +10,6 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:10.15
-      - image: heroku/heroku
 
     working_directory: ~/dockerised-bot
 
