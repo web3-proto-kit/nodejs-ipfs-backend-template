@@ -3,7 +3,7 @@ import chai from 'chai';
 import healthcheck from '../../../src/services/healthcheck/route-service';
 
 const should = chai.should();
-const healthCheckResponse = 'Heroku deployment3 health check!';
+const healthCheckResponse = 'Heroku deployment4 health check!';
 
 describe('Services: healthcheck', () => {
   context('routeService.healthcheck()', () => {

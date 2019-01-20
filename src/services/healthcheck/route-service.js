@@ -1,3 +1,3 @@
-const healthcheck = () => ('Heroku deployment3 health check!');
+const healthcheck = () => ('Heroku deployment4 health check!');
 
 export default healthcheck;
