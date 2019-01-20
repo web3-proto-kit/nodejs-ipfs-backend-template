@@ -16,7 +16,7 @@ jobs:
     steps:
       - heroku/install
       - checkout
-      - setup_remote_docker:
+      - setup_remote_docker
 
       - run:
           name: Build Docker image
