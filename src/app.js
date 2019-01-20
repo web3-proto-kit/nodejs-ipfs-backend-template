@@ -8,8 +8,9 @@ const server = http.createServer(app);
 
 addRouters(app);
 
-server.listen(process.env.SERVER_PORT, () => {
-  logger.debug(`Server be jammin' on port ${process.env.SERVER_PORT}!`);
+const port = process.env.PORT || process.env.SERVER_PORT;
+server.listen(port, () => {
+  logger.debug(`Server be jammin' on port ${port}!`);
 });
 
 export default app;
