@@ -1,3 +1,7 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
 version: 2
 jobs:
   build:
@@ -38,8 +42,9 @@ jobs:
              
 workflows:
   version: 2
-  jobs:
-      - build
+  build-deploy:
+    jobs:
+        - build
 
 # jobs:
 #   build:
