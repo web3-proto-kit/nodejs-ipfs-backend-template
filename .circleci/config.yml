@@ -12,6 +12,9 @@ workflows:
       - deploy
 jobs:
   deploy:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:10.15
     executor: heroku/default
     steps:
       - heroku/install
