@@ -41,7 +41,7 @@ jobs:
 
       - run:
           name: Deploy to Heroku
-          command: (echo "$HEROKU_CREDENTIALS_EMAIL" echo "$HEROKU_CREDENTIALS_PASSWORD") | heroku login
+          command: (echo "$HEROKU_CREDENTIALS_EMAIL" echo "$HEROKU_CREDENTIALS_PASSWORD") | heroku login --interactive
 
       - run:
           name: Deploy to Heroku
