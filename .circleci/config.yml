@@ -10,6 +10,7 @@ version: 2
 orbs:
   heroku: circleci/heroku@1.0.0
 workflows:
+  version: 2
   heroku_deploy:
     jobs:
       - heroku/deploy-via-git
