@@ -33,11 +33,11 @@ orbs:
               heroku container:login
               heroku container:release web
              
-workflows:
-  version: 2
-  build-deploy:
-    jobs:
-        - build
+  workflows:
+    version: 2
+    build-deploy:
+      jobs:
+          - build
 
 
 
